@@ -27,9 +27,10 @@ unsigned int piv;
 		piv= partition(a,izq,der);
 		if (piv==0){
 			quick_sort_rec(a, piv+1,der);
-		}else{
-        quick_sort_rec(a,izq,piv-1);
-        quick_sort_rec(a,piv+1,der);
+		}
+		else{
+        		quick_sort_rec(a,izq,piv-1);
+        		quick_sort_rec(a,piv+1,der);
 		}    
 	}
 }
